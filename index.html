@@ -186,6 +186,50 @@
             object-fit: cover; /* Maintain aspect ratio */
             object-position: top; /* Show top part of the image */
         }
+         @media (max-width: 768px) {
+            .wave .row {
+                flex-direction: column;
+            }
+            .social-icons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .social-icons a:nth-child(-n+4) {
+                order: 1;
+            }
+            .social-icons a:nth-child(n+5) {
+                order: 2;
+            }
+            .profile-img {
+                width: 150px !important;
+                height: 150px !important;
+            }
+            .carousel-item img {
+                height: 70vh; /* Reduced height for mobile */
+            }
+            .col-md-3 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 20px; /* Add margin for spacing */
+            }
+            .col-md-3 canvas {
+                width: 100px !important; /* Smaller width for charts */
+                height: 100px !important; /* Smaller height for charts */
+             
+            }
+            #proyectos .row {
+                margin-top: 2rem !important ;
+            }
+ 
+            #habilidades .row {
+                margin-top: 2rem !important;
+                flex-direction: column;
+                align-items: center;
+           }
+           
+        }
     </style>
 </head>
 
